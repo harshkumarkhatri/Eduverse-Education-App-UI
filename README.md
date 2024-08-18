@@ -4,9 +4,9 @@ A UI project for an ed-tech app made with flutter
 
 Screenshots:
 
-![Onboarding screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.11.png)
-![Sign up screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.14.png)
-![Home screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.18.png)
+<img src="https://github.com/harshkumarkhatri/Eduverse-Education-App-UI/blob/master/assets/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-08-18%20at%2014.55.11.png" width="100" height="200">
+<img src="https://github.com/harshkumarkhatri/Eduverse-Education-App-UI/blob/master/assets/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-08-18%20at%2014.55.14.png" width="100" height="200">
+<img src="https://github.com/harshkumarkhatri/Eduverse-Education-App-UI/blob/master/assets/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-08-18%20at%2014.55.18.png" width="100" height="200">
 
 ## Getting Started
 
