@@ -1,6 +1,12 @@
-# eduverse_education_app_ui
+# Eduverse Education App UI
 
-A new Flutter project.
+A UI project for an ed-tech app made with flutter
+
+Screenshots:
+
+![Onboarding screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.11.png)
+![Sign up screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.14.png)
+![Home screen](assets/Simulator Screenshot - iPhone 15 Pro - 2024-08-18 at 14.55.18.png)
 
 ## Getting Started
 
