@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
+  bool isCheckboxChecked = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -193,10 +199,34 @@ class SignUpScreen extends StatelessWidget {
                   height: 24,
                 ),
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // TODO: Checkbox
+                    Container(
+                      padding: const EdgeInsets.only(top: 2),
+                      height: 20,
+                      width: 20,
+                      child: Checkbox(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(
+                            4,
+                          ),
+                        ),
+                        activeColor: const Color(0xff1B08DA),
+                        side: const BorderSide(
+                          color: Color(
+                            0xff8F92A1,
+                          ),
+                        ),
+                        value: isCheckboxChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isCheckboxChecked = !isCheckboxChecked;
+                          });
+                        },
+                      ),
+                    ),
                     const SizedBox(
-                      width: 12,
+                      width: 8,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -213,7 +243,11 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            // TODO: Show snack bar that this will open a link
+                            const snackBar = SnackBar(
+                              content: Text('It will open a link'),
+                            );
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(snackBar);
                           },
                           child: const Text(
                             "Terms and Conditions",
@@ -284,7 +318,10 @@ class SignUpScreen extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
-                          // TODO: Show snack bar that this will open a link
+                          const snackBar = SnackBar(
+                            content: Text('It will open a link'),
+                          );
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         },
                         child: const Text(
                           "Log in",
