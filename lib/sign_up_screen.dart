@@ -1,3 +1,4 @@
+import 'package:eduverse_education_app_ui/bottom_navbar.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -272,7 +273,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => const SignUpScreen(),
+                        builder: (_) => const BottomNavBar(),
                       ),
                     );
                   },
